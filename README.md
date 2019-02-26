@@ -14,7 +14,9 @@ module add nco/4.6.3-gnu
 module add GMT/4.5.8/gnu
 ```
 
-Required files are stored on Komodo, but can also be accessed on the Github repository.
+Required files are stored on Komodo and on the Github repository. For the latter option, the content of the:
+- ```Wind/``` folder should be placed in ```/home/volcano/FALL3D/WindDownload/yourWindName/```
+- ```Runs/``` folder should be placed in ```/home/volcano/FALL3D/Runs/yourRunName/```
 
 |:warning: Watch out for modules! |
 |---|
