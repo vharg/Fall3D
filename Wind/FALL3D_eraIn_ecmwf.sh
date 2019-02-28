@@ -116,7 +116,7 @@ ncatted -O -h -a TIME_INCR,global,o,l,21600 eraIn.nc
 #nx=$(echo "($east - $west) / $resolution + 1" | bc)
 #ny=$(echo "($north - $south) / $resolution + 1" | bc)
 nx=$(echo "(($east - $west) / $resolution) * $scaling + 1" | bc)
-ny=$(echo "(($north - $south)) / $resolution) * $scaling + 1" | bc)
+ny=$(echo "(($north - $south) / $resolution) * $scaling + 1" | bc)
 
 ncatted -O -h -a LONMIN,global,o,l,$west eraIn.nc
 ncatted -O -h -a LONMAX,global,o,l,$east eraIn.nc
